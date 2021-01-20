@@ -24,6 +24,8 @@ $sudo php -d detect_unicode=0 go-pear.phar
 
 ## 2、安装zip
 
+如果系统升级到Big Sur，参考Big Sur的zip安装
+
 $pecl search zip
 
 $sudo pecl install zip
@@ -71,6 +73,28 @@ $sudo chmod o+w /private/etc/php.ini
 将extension=zip.so放到php.ini中的最后一行，保存退出
 
 运行php -m查看扩展，如果已经列表中有zip说明已经安装成功
+
+## Big Sur的zip安装
+
+使用brew安装php
+
+#brew install php
+
+link安装的php库
+
+#brew link php
+
+如果提示/usr/local/bin没有写权限，使用以下命令打开：
+
+#sudo chown -R `whoami`:admin /usr/local/bin
+
+同理，如果碰到其他目录的写权限问题，也可以用上面的命令处理
+
+$pecl search zip
+
+$sudo pecl install zip
+
+安装好后按照第三部分配置php.ini
 
 参考链接：
 
