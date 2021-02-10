@@ -94,6 +94,15 @@ $pecl search zip
 
 $sudo pecl install zip
 
+注意：如果安装过程中碰到ERROR: failed to mkdir /usr/local/Cellar/php/8.0.2/pecl/20200930
+
+查看pecl符号链接的具体位置
+
+#ls -al /usr/local/Cellar/php/8.0.2/pecl
+/usr/local/lib/php/pecl
+
+然后直接mkdir -p /usr/local/lib/php/pecl/20200930
+
 安装好后按照第三部分配置php.ini
 
 参考链接：
