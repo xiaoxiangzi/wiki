@@ -99,6 +99,7 @@ $sudo pecl install zip
 查看pecl符号链接的具体位置
 
 #ls -al /usr/local/Cellar/php/8.0.2/pecl
+
 /usr/local/lib/php/pecl
 
 然后直接mkdir -p /usr/local/lib/php/pecl/20200930
